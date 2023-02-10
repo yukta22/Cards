@@ -1,117 +1,174 @@
-body{
+body {
     background-color: rgb(210, 182, 198);
-}
-
-.container{
+  }
+  
+  .container {
     width: 100%;
-    margin:10px;
+    margin: 10px;
     /* padding: 12px; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap:10px;
-}
-
-.card{
+    gap: 10px;
+  }
+  
+  .card {
     width: 450px;
     height: 290px;
     background-color: #deeaee;
     border-radius: 10%;
-    padding:10px;
+    padding: 10px;
     margin: 10px;
     margin-top: 50px;
-    margin-left:80px;
-}
-
-.card:hover{
+    margin-left: 80px;
+  }
+  
+  .card:hover {
     box-shadow: 10px 10px 5px gray;
-
-}
-
-.stu{
+  }
+  .stu {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
-
-img{
-    margin-top:30px;
+  }
+  
+  img {
+    margin-top: 30px;
     border-radius: 50%;
     height: 90px;
-    width:100px;
-    margin-left:-30px;
-}
-
-p{
+    width: 100px;
+    margin-left: -30px;
+  }
+  
+  p {
     font-weight: 900;
     color: #1c6d6b;
-}
-
-p span{
+  }
+  
+  p span {
     font-weight: normal;
     color: black;
-}
-a{
+  }
+  .card a {
     color: gray;
     font-weight: 550;
     font-size: 18px;
-    margin-left:180px;
-}
-
-.info{
-    margin-top:20px;
+    margin-left: 180px;
+  }
+  
+  .info {
+    margin-top: 20px;
     margin-right: 20px;
-}
-
-.clg{
+  }
+  
+  .clg {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
-
-@media screen and (max-width: 1450px){
-    .container{
-        
-        margin-right: 20px;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .menu {
+    width: 20%;
+    border-radius: 5px;
+    margin-left: 80px;
+  }
+  .menu a {
+    text-decoration: none;
+    color: white;
+  }
+  .menu p {
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 18px;
+    background-color: black;
+  }
+  
+  .menu p:hover {
+    cursor: pointer;
+  }
+  
+  .detail {
+    width: 60%;
+    margin-left: 150px;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: auto;
+  }
+  .detail h1 {
+    border-radius: 5px;
+    margin: 0px;
+    padding: 0px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+  }
+  
+  .content {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* padding-right:160px; */
+  }
+  
+  .content div {
+    width: 300px;
+    height: auto;
+  }
+  
+  @media screen and (max-width: 1450px) {
+    .container {
+      margin-right: 20px;
     }
-}
-
-@media screen and (max-width : 1050px) {
-    .container{
-        display: grid;
-        grid-template-columns: auto;
-        margin-top: 60px;
-        margin-left:10px;
-        
-        
+  }
+  
+  @media screen and (max-width: 1050px) {
+    .container {
+      display: grid;
+      grid-template-columns: auto;
+      margin-top: 60px;
+      margin-left: 10px;
     }
-    .card{
-        margin-left: 18px;
-        width: 420px;
-        height: 300px;
+    .card {
+      margin-left: 18px;
+      width: 420px;
+      height: 300px;
     }
-}
-
-@media screen and (max-width : 450px) {
-    .container{
-        display: grid;
-        grid-template-columns: auto;
-        margin-top: 60px;
-        margin-left:-20px;
-        margin-right: 35px;
-        
+    
+  }
+  
+  @media screen and (max-width: 450px) {
+    .container {
+      display: grid;
+      grid-template-columns: auto;
+      margin-top: 60px;
+      margin-left: -20px;
+      margin-right: 35px;
     }
-    .card{
-        padding-left: -100px;
-        width: 300px;
-        height: 300px;
+    .card {
+      padding-left: -100px;
+      width: 300px;
+      height: 300px;
     }
-    img{
-        border-radius: 50%;
-        padding-right: 10px;
-        margin-left: 18px;
+    img {
+      border-radius: 50%;
+      padding-right: 10px;
+      margin-left: 18px;
     }
-    a{
-        margin-left: 115px;
+    a {
+      margin-left: 115px;
     }
-}
+    .content{
+        margin-left: -5px;
+    }
+    
+  }
+  
